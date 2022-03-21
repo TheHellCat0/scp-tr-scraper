@@ -1,0 +1,34 @@
+{
+  "name": "scp-tr-scraper",
+  "version": "1.0.0",
+  "description": "scpvakfi.wikidot.com veri ayıklayıcısı",
+  "main": "index.js",
+  "keywords": [
+    "scp",
+    "scp-wiki",
+    "scp-tr",
+    "scp-tr-scraper",
+    "scp-wiki-scraper",
+    "wikidot",
+    "scpvakfi",
+    "cheerio"
+  ],
+  "author": "*HellCat",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHellCat0/scp-tr-scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheHellCat0/scp-tr-scraper/issues"
+  },
+  "homepage": "https://github.com/TheHellCat0/scp-tr-scraper#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
