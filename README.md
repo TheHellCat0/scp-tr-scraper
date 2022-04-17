@@ -4,7 +4,7 @@ require('scp-tr-scraper')('049').then(console.log)
 /*
 {
   url: 'http://scpvakfi.wikidot.com/scp-049',
-  scp: 'SCP-049',
+  item: 'SCP-049',
   object_class: 'Öklid',
   special_containment_procedures: 'SCP-049, Site-19 Araştırma Sektör-02 de standart güvenlikli insansı muhafaza hücresinde tutulmaktadır. SCP-049 bir ye
 re nakledilmeden önce mutlaka uyuşturulmalıdır. Nakil sırasında SCP-049 3.Seviye İnsansı Kısıtlama Kelepçeleri (tasma ve uzatma çubukları dahil) ile sab

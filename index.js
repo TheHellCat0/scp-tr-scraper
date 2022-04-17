@@ -2,14 +2,19 @@ const cheerio = require('cheerio');
 const URL = "http://scpvakfi.wikidot.com/scp-";
 const axios = require('axios');
 module.exports = async (code) => {
+    if (!code) {
+        throw new Error("SCP numarası belirtilmedi!")
+        return;
+    }
+
     const body = await axios.get(URL + code).catch(err => {
-        if (err.response.status) {
+        if (err) {
             throw new Error("SCP bulunamadı!");
             return;
         }
     });
     const $ = cheerio.load(body.data);
-    const scp = $('#page-title').text().trim() || null;
+    const item = $('#page-title').text().trim() || null;
     const special_containment_procedures = $('strong:contains("Özel Saklama Prosedürleri:")').parent().text().slice(26).trim() || null;
     const description = $('strong:contains("Açıklama:")').parent().text().slice(9).trim() || null;
     const object_class = $('strong:contains("Nesne Sınıfı:")').parent().text().slice(13).trim() || null;
@@ -36,7 +41,7 @@ module.exports = async (code) => {
 
     return {
         url: URL + code,
-        scp: scp,
+        item: item,
         object_class: object_class,
         special_containment_procedures: special_containment_procedures,
         description: description,
