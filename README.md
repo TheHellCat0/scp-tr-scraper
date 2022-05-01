@@ -1,6 +1,13 @@
+*Scp Arama*
 ```js
-require('scp-tr-scraper')('049').then(console.log)
-
+require("./index.js").searchScp("002").then(console.log);
+```
+*Rastgele Scp*
+```js
+require("./index.js").randomScp().then(console.log);
+```
+*Çıkış*
+```js
 /*
 {
   url: 'http://scpvakfi.wikidot.com/scp-049',

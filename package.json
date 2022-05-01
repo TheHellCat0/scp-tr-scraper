@@ -27,7 +27,9 @@
     "url": "https://github.com/TheHellCat0/scp-tr-scraper/issues"
   },
   "homepage": "https://github.com/TheHellCat0/scp-tr-scraper#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
