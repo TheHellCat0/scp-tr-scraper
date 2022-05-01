@@ -33,6 +33,5 @@ men röntgenler SCP-049'un bu katmanın altında insansı bir iskelete sahip old
   ],
   raw: [Function: raw]
 }
-*/
  */
 ```
