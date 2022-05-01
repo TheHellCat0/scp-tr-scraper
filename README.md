@@ -7,7 +7,8 @@ require("scp-tr-scraper").search({code : "scp-002"}).then(console.log);
 require("scp-tr-scraper").random({}).then(console.log);
 ```
 *Çıkış*
-```json
+```js
+/*
 {
   url: 'http://scpvakfi.wikidot.com/scp-049',
   item: 'SCP-049',
@@ -32,4 +33,6 @@ men röntgenler SCP-049'un bu katmanın altında insansı bir iskelete sahip old
   ],
   raw: [Function: raw]
 }
+*/
+ */
 ```
