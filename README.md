@@ -1,6 +1,6 @@
 *Scp Arama*
 ```js
-require("scp-tr-scraper").search({code : "scp-002"}).then(console.log);
+require("scp-tr-scraper").search({code : "scp-049"}).then(console.log);
 ```
 *Rastgele Scp*
 ```js
