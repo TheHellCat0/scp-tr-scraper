@@ -1,14 +1,13 @@
 *Scp Arama*
 ```js
-require("./index.js").searchScp("002").then(console.log);
+require("scp-tr-scraper").search({code : "scp-002"}).then(console.log);
 ```
 *Rastgele Scp*
 ```js
-require("./index.js").randomScp().then(console.log);
+require("scp-tr-scraper").random({}).then(console.log);
 ```
 *Çıkış*
-```js
-/*
+```json
 {
   url: 'http://scpvakfi.wikidot.com/scp-049',
   item: 'SCP-049',
@@ -19,6 +18,7 @@ itlenmeli ve en az iki silahlı koruma tarafından izlenmelidir.',
   description: "SCP-049 1.9 metre civarında, ortaçağ veba doktoru görünümünü taşıyan insansı bir varlıktır. SCP-049 bu mesleğin göstergesi olan cübbe ve
  seramik bir maske giyiyor gibi gözükse de bu giysiler SCP-049'un vücudunun bir parçasıdır ve altındaki form neredeyse ayırt edilemez haldedir. Buna rağ
 men röntgenler SCP-049'un bu katmanın altında insansı bir iskelete sahip olduğunu göstermektedir.",
+  discovery: null,
   reference: null,
   images: [
     {
@@ -29,7 +29,7 @@ men röntgenler SCP-049'un bu katmanın altında insansı bir iskelete sahip old
       image: 'https://scp-wiki.wdfiles.com/local--files/scp-049/SCP-049D-Image-2.png',
       description: 'Keşfedilme anında SCP-049'
     }
-  ]
+  ],
+  raw: [Function: raw]
 }
- */
 ```

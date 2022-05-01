@@ -1,13 +1,13 @@
 {
   "name": "scp-tr-scraper",
-  "version": "2.0.1",
-  "description": "scpvakfi.wikidot.com veri ayıklayıcısı",
+  "version": "3.0.0",
+  "description": "Unofficial scpvakfi.wikidot.com veri ayıklayıcısı",
   "main": "index.js",
   "keywords": [
     "scp",
-    "scp-wiki",
     "scp-tr",
     "scp-tr-scraper",
+    "scp-wiki",
     "scp-wiki-scraper",
     "wikidot",
     "scpvakfi",

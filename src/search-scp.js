@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const URL = "http://scpvakfi.wikidot.com/";
 const axios = require('axios');
-module.exports = async ({code : code}) => {
+module.exports = async ({code: code}) => {
     if (!code) throw new Error("SCP numarası belirtilmedi!");
     const body = await axios.get(URL + code).catch(() => {
     })
@@ -47,10 +47,10 @@ module.exports = async ({code : code}) => {
         description: description,
         discovery: discovery,
         reference: reference,
-        images: image.concat(image_left,image_right, image_center),
-        raw : function () {
+        images: image.concat(image_left, image_right, image_center),
+        raw: function () {
             return {
-                html : body.data
+                html: body.data
             }
         }
     }
