@@ -9,7 +9,7 @@ module.exports = async ({code: code}) => {
         return null;
     }
     const $ = cheerio.load(body.data);
-    const item = $('strong:contains("Nesne #:")').parent().text().slice(8).trim() || $('strong:contains("Madde #:")').parent().text().slice(8).trim() || null;
+    const item = $('strong:contains("Nesne #:")').parent().text().slice(8).trim() || $('strong:contains("Madde #:")').parent().text().slice(8).trim() || $('#page-title').text().trim() || null;
     const special_containment_procedures = $('strong:contains("Özel Saklama Prosedürleri:")').parent().text().slice(26).trim() || null;
     const description = $('strong:contains("Açıklama:")').parent().text().slice(9).trim() || null;
     const discovery = $('strong:contains("Keşif:")').parent().text().slice(6).trim() || null;
